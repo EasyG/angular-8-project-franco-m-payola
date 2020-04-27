@@ -1,0 +1,66 @@
+<div class="card mb-1" >
+    <div class="row no-gutters" >
+      <div class="col-md-4">
+        <img src="assets/image/personal.jpg" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8" >
+        <div class="card-body" >
+          <h3 class="card-title" class="text-muted">{{user.name}}</h3>
+
+          <div class="row" >            
+            <div class="col">
+                <div class="col"  class="col-description"> <h5>Email:</h5></div>                                         
+                <div class="col"  class="col-description">{{ user.email}}</div>
+            </div>
+            <div class="col">
+                <div class="col"  class="col-description"> <h5>Phone:</h5></div>                        
+                <div class="col"  class="col-description">{{ user.phone }}</div>
+            </div>
+        </div>
+        <br>
+        <div class="row" >
+            <div class="col">
+                <div class="col" class="col-description"><h5>Calle:</h5></div>
+                <div class="col" class="col-description">{{ user.street }}</div>
+            </div>
+            <div class="col">
+                <div class="col" class="col-description"> <h5>Suite:</h5></div>                        
+                <div class="col"  class="col-description">{{ user.suite }}</div>
+            </div>
+        </div>
+        <br>
+        <div class="row" >
+            <div class="col">
+                <div class="col" class="col-description"><h5>City:</h5></div>
+                <div class="col" class="col-description">{{ user.city }}</div>
+            </div>
+            <div class="col">
+                <div class="col" class="col-description"> <h5>Zipcode:</h5></div>                        
+                <div class="col"  class="col-description">{{ user.zipcode }}</div>
+            </div>
+        </div>    
+        <br>
+        <div class="row" >
+            <div class="col">
+                <div class="col" class="col-description"><h5>Website:</h5></div>
+                <div class="col" class="col-description">{{ user.website }}</div>
+            </div>
+            <div class="col">
+                <div class="col" class="col-description"> <h5>Company:</h5></div>                        
+                <div class="col"  class="col-description">{{ user.companyName }}</div>
+            </div>
+        </div> 
+        <br> 
+         
+        <div class="row" >
+            <div class="col">
+                <button type="button" class="btn btn-outline-primary" routerLink="/home/usuarios">Volver</button>              
+            </div>
+            
+        </div> 
+
+      
+        </div>
+      </div>
+    </div>
+  </div>

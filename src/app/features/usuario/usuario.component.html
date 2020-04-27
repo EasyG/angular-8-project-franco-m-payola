@@ -1,0 +1,15 @@
+
+  <div class="card" >
+      <div class="card-body">
+        <h5 class="card-title">Card</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ user.name }}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">{{ user.email }}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">{{ user.phone }}</h6>
+        <!--ROUTERLINK Si genero la URL de manera dinámica, le paso el array con datos entre []-->
+        <!--sino, puedo pasar únicamente la ruta sin [] y la genero de manera-->
+        <button type="button" class="btn btn-outline-primary" [routerLink]="['/home/card',user.id,user.name,user.email,user.street,user.suite,user.zipcode,user.city,user.phone,user.website,user.companyName,user.catchPhrase]">Ver Perfil</button>              
+        <button type="button" class="btn btn-outline-danger" (click) = "borrarUser($event)">Borrar</button>
+      </div>
+    </div>
+    <br>
+  

@@ -1,0 +1,19 @@
+
+.page-footer{
+    
+   
+    background: linear-gradient(rgb(238, 239, 243),#a0a5c7 ,rgb(40, 69, 112))!important;
+    color: #3a3838;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+} 
+
+
+.footer-copyright a{
+    color: rgb(6, 5, 63);
+    text-align: 10%;
+}

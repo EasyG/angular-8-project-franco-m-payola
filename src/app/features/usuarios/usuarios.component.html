@@ -1,0 +1,25 @@
+<head>  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+</head>
+
+<div class="container" *ngIf="isLoading">
+    <button class="btn btn-primary" disabled>
+        <span class="spinner-grow spinner-grow-sm"></span>
+        Loading....
+    </button>
+</div>
+    
+<div *ngIf="!isLoading && usersList.length">
+<h1>USUARIOS</h1>
+<div  class="row" >  
+
+    <app-usuario  *ngFor="let user of usersList; let i = index" (eliminar)="eliminar($event)" [indice] = "i" [user]="user"></app-usuario>
+</div>
+</div>
+
+<div class="alert alert-primary" role="alert" *ngIf="!isLoading && !usersList.length">
+    No hay usuarios a mostrar
+</div>
+
+
+
